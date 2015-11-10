@@ -1,0 +1,228 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/settings_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1" >
+            
+            <TableLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	            
+                <!-- <TableRow>
+	                <TextView
+	                    android:id="@+id/decks"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/settings_decks"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <Spinner
+				        android:id="@+id/spinnerDecks"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="right"
+				        android:entries="@array/decks" />
+                </TableRow> -->
+                
+                <TableRow>
+	                <TextView
+	                    android:id="@+id/time"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/settings_time"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <Spinner
+				        android:id="@+id/spinnerTime"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="right"
+				        android:entries="@array/secondsBtnHands" />
+                </TableRow>
+
+                <TableRow>
+	                <TextView
+	                    android:id="@+id/numPlayersInGame"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/settings_numPlayers"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <Spinner
+				        android:id="@+id/spinnerNumPlayers"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="right"
+				        android:entries="@array/numPlayers" />
+                </TableRow>
+                
+                <TableRow>
+	                <TextView
+			            android:id="@+id/difficulty"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/settings_difficulty"
+			            android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <Spinner
+				        android:id="@+id/spinnerDifficulty"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="right"
+				        android:entries="@array/difficulty" />
+                </TableRow>
+                
+                <TableRow>
+	                <TextView
+	                    android:id="@+id/leader"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/settings_leader"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <ToggleButton
+			            android:id="@+id/toggleLeader"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:onClick="onClick" />
+                
+                </TableRow>
+                
+                <TableRow>
+	                <TextView
+	                    android:id="@+id/jokers"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/settings_jokers"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <ToggleButton
+			            android:id="@+id/toggleJoker"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:onClick="onClick" />
+                </TableRow>
+                
+                <TableRow>
+	                <TextView
+			            android:id="@+id/power"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/settings_power"
+			            android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <ToggleButton
+			            android:id="@+id/togglePower"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:onClick="onClick" />
+                </TableRow>
+                
+				<TableRow>
+	                <TextView
+			            android:id="@+id/wild"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/settings_wild"
+			            android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <ToggleButton
+			            android:id="@+id/toggleWild"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:onClick="onClick" />
+                </TableRow>
+                
+				<!-- <TableRow>
+	                <TextView
+			            android:id="@+id/discard"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/settings_discard"
+			            android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <ToggleButton
+			            android:id="@+id/toggleDiscard"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:onClick="onClick" />
+                </TableRow> -->
+                
+				<!-- <TableRow>
+	                <TextView
+			            android:id="@+id/sequence"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/settings_sequence"
+			            android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <ToggleButton
+			            android:id="@+id/toggleSequence"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:onClick="onClick" />
+                </TableRow> -->
+                
+                <TableRow>
+	                <TextView
+			            android:id="@+id/pass"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/settings_pass"
+			            android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <ToggleButton
+			            android:id="@+id/togglePass"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:onClick="onClick" />
+                </TableRow>
+                
+<!--                 <TableRow>
+	                <TextView
+			            android:id="@+id/burns"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/settings_burns"
+			            android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <ToggleButton
+			            android:id="@+id/toggleBurns"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:onClick="onClick" />
+                </TableRow> -->
+                
+                <TableRow>
+	                <TextView
+	                    android:id="@+id/speedUp"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/settings_speedUp"
+	                    android:textAppearance="?android:attr/textAppearanceMedium" />
+	                
+	                <ToggleButton
+			            android:id="@+id/toggleSpeedUp"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:onClick="onClick" />
+                </TableRow>
+	        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

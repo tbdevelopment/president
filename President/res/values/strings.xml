@@ -1,0 +1,88 @@
+<resources>
+
+    <string name="app_name">President</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">President Card Game</string>
+    <string name="Play">Play</string>
+    <string name="Pass">Pass</string>
+    <string name="Start">Start</string>
+    <color name="green">#108E3A</color>
+    
+    <string name="about_title">About</string>
+    <string name="about_content">
+        Default Rules:\n
+        \t - Jokers and 2s are power cards.\n
+        \t - Threes are wild but cannot beat wild card.\n
+        \t - Jokers can beat everything.\n
+        \t - 2s can be played on multiple card sets.\n
+        \t\t(Example: one 2 beats two Kings. two 2s can beat three Aces).\n
+        \t - 2s cannot beat a Joker.\n
+        \t - Burns are enabled.\n\n
+        Wikipedia article with full rules:\n
+        \thttp://en.wikipedia.org/wiki/Scum_(card_game)#General_rules
+	</string>
+    <string name="version">Version: 1.0</string>
+    <string name="dev">Developers: Billy Cai, Dave Workman, Tayler Phillips, Taras Zubyak</string>
+    
+    <string name="single_title">Single Player</string>
+    
+    <string name="multi_title">Multiplayer - Coming Soon!</string>
+    <string name="ok">Ok</string>
+    
+    <string name="settings_title">Settings</string>
+    <string name="settings_decks">Coming Soon - Number of Decks: </string>
+    <string name="settings_leader">Scum Leads: </string>
+    <string name="settings_jokers">Jokers: </string>
+    <string name="settings_power">Power Card Ends Round: </string>
+    <string name="settings_wild">Wild Cards: </string>
+    <string name="settings_discard">Coming Soon - Discards: </string>
+    <string name="settings_sequence">Coming Soon - Multi Sequences (4,6,8 etc.): </string>
+    <string name="settings_pass">Auto Pass: </string>
+    <string name="settings_time">Seconds Between Hands: </string>
+    <string name="settings_numPlayers">Number Of Players: </string>
+    <string name="settings_difficulty">Difficulty: </string>
+    <string name="settings_speedUp">Speed Up Computers When Out: </string>
+    <string name="settings_burns">Burns: </string>
+    <string-array name="numPlayers">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="decks">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+    </string-array>
+    <string-array name="secondsBtnHands">
+        <item>Off</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="difficulty">
+        <item>Easy</item>
+        <item>Hard</item>
+    </string-array>
+    <style name="ButtonText">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textColor">#ffffff</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:layout_margin">3dp</item>
+	    <item name="android:textSize">30dp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">2</item>
+	</style>
+   
+
+</resources>

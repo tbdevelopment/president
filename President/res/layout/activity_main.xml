@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_menu" >
+
+    <Button
+        android:id="@+id/singleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/mainBtn"
+        android:layout_marginTop="80dp"
+        android:onClick="onClick"
+        android:text="@string/single_title"
+        android:background="@drawable/blue_btn" />
+
+    <Button
+        android:id="@+id/multiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="@string/multi_title"
+        android:background="@drawable/blue_btn" style="@style/mainBtn" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/multiButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="@string/about_title"
+        android:background="@drawable/blue_btn" style="@style/mainBtn" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        style="@style/mainBtn"
+        android:text="@string/settings_title"
+        android:background="@drawable/blue_btn"  />
+
+</RelativeLayout>

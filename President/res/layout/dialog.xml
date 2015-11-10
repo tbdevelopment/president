@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/scrollView1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:id="@+id/mainDialogLayout"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="15dp">        
+        
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/text1" >
+	
+	
+				<TextView
+				    android:id="@+id/textView1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_margin="15dp"
+				    android:text="You have received the following cards:" />
+	
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/receivedCards" >
+	
+	            <ImageView
+	                android:id="@+id/receivedCard1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"/>
+	             <ImageView
+	                android:id="@+id/receivedCard2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"/>
+	        </LinearLayout>
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/text2" >
+			    <TextView
+			        android:id="@+id/textView2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="You have discarded the following cards:" 
+			        android:layout_margin="15dp"/>
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/discardedCards" >
+	            <ImageView
+	                android:id="@+id/discardCard1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+	             <ImageView
+	                android:id="@+id/discardCard2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/dialogButtons"
+	            android:paddingTop="15dp">
+	            <Button
+	                android:id="@+id/dialogOk"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="Ok"
+	                android:background="@drawable/blue_btn" style="@style/ButtonText"/>
+	    	</LinearLayout>
+    	</LinearLayout>
+    </ScrollView>
